@@ -1,3 +1,1 @@
-This project is for STEAM Ease 3
-The members are :
-Rangga
+Made by Rangga
