@@ -1,0 +1,32 @@
+[gd_scene format=3 uid="uid://cdsk08av8ajac"]
+
+[node name="End screen" type="Control" unique_id=390796744]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 6.0
+offset_top = 2.0
+offset_right = 6.0
+offset_bottom = 2.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Panel" type="Panel" parent="." unique_id=22476629]
+layout_mode = 0
+offset_left = -316.0
+offset_top = -141.0
+offset_right = 324.0
+offset_bottom = 151.0
+
+[node name="RichTextLabel" type="RichTextLabel" parent="Panel" unique_id=939657958]
+layout_mode = 0
+offset_left = 261.0
+offset_top = 121.0
+offset_right = 373.0
+offset_bottom = 160.0
+text = "Title screen
+"
+fit_content = true
+horizontal_alignment = 1
+vertical_alignment = 1
