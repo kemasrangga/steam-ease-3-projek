@@ -1,7 +1,7 @@
 extends Node
 
 var current_level = 1
-var final_level = 3
+var final_level = 4
 var area_path = "res://Levels/"
 
 func end_game():
