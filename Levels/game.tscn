@@ -319,7 +319,7 @@ MAX_ACCELERATION = 5
 JUMP_POWER = 300
 
 [node name="Camera2D" type="Camera2D" parent="Player" unique_id=476327489]
-zoom = Vector2(2, 2)
+zoom = Vector2(3, 3)
 
 [node name="Flag" parent="." unique_id=1128579791 instance=ExtResource("5_7jktm")]
 position = Vector2(1079, -78)

@@ -1,7 +1,7 @@
 [gd_scene format=3 uid="uid://buk542xm4hsxt"]
 
 [ext_resource type="Script" uid="uid://dbw80pl407l0m" path="res://player.gd" id="1_onrkg"]
-[ext_resource type="Texture2D" uid="uid://csdx2k0mo4e5r" path="res://Assets/dinoCharactersVersion1/sheets/DinoSprites - vita.png" id="2_onrkg"]
+[ext_resource type="Texture2D" uid="uid://bgieidvc312eo" path="res://Assets/dinoCharactersVersion1/sheets/DinoSprites - mort.png" id="2_onrkg"]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_onrkg"]
 radius = 5.0
@@ -37,41 +37,41 @@ region = Rect2(384, 0, 24, 24)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_n7ghd"]
 atlas = ExtResource("2_onrkg")
-region = Rect2(240, 0, 24, 24)
+region = Rect2(168, 0, 24, 24)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_nvl01"]
 atlas = ExtResource("2_onrkg")
 region = Rect2(192, 0, 24, 24)
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_ivps1"]
-atlas = ExtResource("2_onrkg")
-region = Rect2(144, 0, 24, 24)
-
 [sub_resource type="AtlasTexture" id="AtlasTexture_urp6f"]
 atlas = ExtResource("2_onrkg")
-region = Rect2(168, 0, 24, 24)
+region = Rect2(264, 0, 24, 24)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_bwjto"]
 atlas = ExtResource("2_onrkg")
-region = Rect2(96, 0, 24, 24)
+region = Rect2(288, 0, 24, 24)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_606se"]
 atlas = ExtResource("2_onrkg")
-region = Rect2(120, 0, 24, 24)
+region = Rect2(96, 0, 24, 24)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_u1c27"]
 atlas = ExtResource("2_onrkg")
-region = Rect2(144, 0, 24, 24)
+region = Rect2(120, 0, 24, 24)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_op7ga"]
 atlas = ExtResource("2_onrkg")
-region = Rect2(168, 0, 24, 24)
+region = Rect2(144, 0, 24, 24)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_q13i1"]
 atlas = ExtResource("2_onrkg")
 region = Rect2(192, 0, 24, 24)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_pylmc"]
+atlas = ExtResource("2_onrkg")
+region = Rect2(168, 0, 24, 24)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_pbfsw"]
 atlas = ExtResource("2_onrkg")
 region = Rect2(216, 0, 24, 24)
 
@@ -121,19 +121,16 @@ animations = [{
 }, {
 "frames": [{
 "duration": 1.0,
-"texture": SubResource("AtlasTexture_ivps1")
+"texture": SubResource("AtlasTexture_urp6f")
 }, {
 "duration": 1.0,
-"texture": SubResource("AtlasTexture_urp6f")
+"texture": SubResource("AtlasTexture_bwjto")
 }],
 "loop": true,
 "name": &"jump_up",
 "speed": 5.0
 }, {
 "frames": [{
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_bwjto")
-}, {
 "duration": 1.0,
 "texture": SubResource("AtlasTexture_606se")
 }, {
@@ -148,10 +145,13 @@ animations = [{
 }, {
 "duration": 1.0,
 "texture": SubResource("AtlasTexture_pylmc")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_pbfsw")
 }],
 "loop": true,
 "name": &"walk",
-"speed": 10.0
+"speed": 12.0
 }]
 
 [node name="Player" type="CharacterBody2D" unique_id=903727034]
@@ -164,6 +164,6 @@ shape = SubResource("CapsuleShape2D_onrkg")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="Sprite2D" unique_id=1318957785]
 sprite_frames = SubResource("SpriteFrames_2hs0m")
-animation = &"walk"
+animation = &"jump_up"
 autoplay = "Idle"
-frame_progress = 0.42508706
+frame_progress = 0.18242043

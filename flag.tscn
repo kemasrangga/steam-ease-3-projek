@@ -1,39 +1,36 @@
 [gd_scene format=3 uid="uid://cpebx3enp5vev"]
 
 [ext_resource type="Script" uid="uid://cmjn7nav07mk3" path="res://flag.gd" id="1_amn8n"]
-[ext_resource type="Texture2D" uid="uid://by8py4fvwlvtm" path="res://Star.png" id="2_amn8n"]
+[ext_resource type="Texture2D" uid="uid://fh1us5uxlg5y" path="res://flag animation.png" id="2_amn8n"]
 
-[sub_resource type="CircleShape2D" id="CircleShape2D_amn8n"]
-radius = 23.0
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_amn8n"]
+radius = 19.0
+height = 46.0
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_ukulb"]
 atlas = ExtResource("2_amn8n")
-region = Rect2(0, 0, 32, 32)
+region = Rect2(0, 0, 60, 60)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_ts4f7"]
 atlas = ExtResource("2_amn8n")
-region = Rect2(0, 32, 32, 32)
+region = Rect2(60, 0, 60, 60)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_v7xjy"]
 atlas = ExtResource("2_amn8n")
-region = Rect2(32, 64, 32, 32)
+region = Rect2(120, 0, 60, 60)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_pcbnv"]
 atlas = ExtResource("2_amn8n")
-region = Rect2(32, 32, 32, 32)
+region = Rect2(180, 0, 60, 60)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_rssqg"]
 atlas = ExtResource("2_amn8n")
-region = Rect2(0, 64, 32, 32)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_esaoi"]
-atlas = ExtResource("2_amn8n")
-region = Rect2(32, 0, 32, 32)
+region = Rect2(240, 0, 60, 60)
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_uwdpu"]
 animations = [{
 "frames": [{
-"duration": 0.5,
+"duration": 1.0,
 "texture": SubResource("AtlasTexture_ukulb")
 }, {
 "duration": 1.0,
@@ -47,9 +44,6 @@ animations = [{
 }, {
 "duration": 1.0,
 "texture": SubResource("AtlasTexture_rssqg")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_esaoi")
 }],
 "loop": true,
 "name": &"default",
@@ -60,11 +54,11 @@ animations = [{
 script = ExtResource("1_amn8n")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1499038433]
-shape = SubResource("CircleShape2D_amn8n")
+shape = SubResource("CapsuleShape2D_amn8n")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=458406978]
-position = Vector2(3, 6)
-scale = Vector2(1.78125, 1.8125)
+position = Vector2(20, -4)
+scale = Vector2(0.93515617, 0.9515624)
 sprite_frames = SubResource("SpriteFrames_uwdpu")
 frame_progress = 0.2696574
 

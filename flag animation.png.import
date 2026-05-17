@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://by8py4fvwlvtm"
-path="res://.godot/imported/Star.png-3d67ea69a9a0445133039298d781d14b.ctex"
+uid="uid://fh1us5uxlg5y"
+path="res://.godot/imported/flag animation.png-1eaca8699d553abc3eaf134317c5cf95.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Star.png"
-dest_files=["res://.godot/imported/Star.png-3d67ea69a9a0445133039298d781d14b.ctex"]
+source_file="res://flag animation.png"
+dest_files=["res://.godot/imported/flag animation.png-1eaca8699d553abc3eaf134317c5cf95.ctex"]
 
 [params]
 
